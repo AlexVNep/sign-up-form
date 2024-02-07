@@ -21,12 +21,23 @@
     margin: 0;
 }
 
+body,
+.title-section,
+.form-section,
+.form-list,
+form,
+.leftside,
+.rightside,
+label span,
+footer {
+    display: flex;
+}
+
 body {
     height: 100vh;
     background: url('rod-long-aJvSX36kweg-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
     flex-direction: row-reverse;
 }
 
@@ -37,7 +48,6 @@ img {
 
 .title-section {
     /* border: 2px solid black; */
-    display: flex;
     align-items: center;
     justify-content: center;
     height: 30vh;
@@ -52,7 +62,6 @@ img {
 }
 
 .form-section {
-    display: flex;
     flex-direction: column;
     margin-right: auto;
     border: 2px solid red;
@@ -74,27 +83,23 @@ header > p {
 }
 
 .form-list {
-    display: flex;
     gap: 200px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 section {
-    border: 4px solid pink;
-    width: 800px;
+    /* border: 4px solid pink; */
+    width: 104%;
 }
 
 form {
-    display: flex;
     flex-direction: column;
-    border: 2px solid red;
-    margin: 0 auto;
+    align-items: center;
     gap: 20px;
 }
 
 .leftside,
 .rightside {
-    display: flex;
     flex-direction: column;
     gap: 25px;
 }
@@ -104,7 +109,41 @@ label span {
     text-align: left;
 }
 
+input {
+    font: 1.3em sans-serif;
+    padding: 0 10px;
+    margin: 0;
+    border-radius: 4px;
+}
+
 legend {
     font: 1.3em sans-serif;
     font-weight: bold;
+}
+
+footer {
+    /* border: 2px solid red; */
+    width: 75%;
+    flex-direction: column;
+    align-items: end;
+    gap: 25px;
+}
+
+button {
+    padding:15px 25px 15px 25px;
+    font: 1.5em 'norsebold', sans-serif;
+    border-radius: 5px;
+}
+
+footer > p {
+    font-style: sans-serif ;
+}
+
+input:focus,
+input:hover {
+    border-color: #3636d7;
+}
+
+input:invalid {
+    border: 2px solid red;
 }
