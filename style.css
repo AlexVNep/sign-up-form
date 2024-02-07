@@ -64,12 +64,12 @@ img {
 .form-section {
     flex-direction: column;
     margin-right: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     align-items: center;
     justify-content: space-around;
     width: 75%;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(167, 176, 167);
 }
 
 header {
@@ -88,8 +88,10 @@ header > p {
 }
 
 section {
-    /* border: 4px solid pink; */
+    /* border: 4px solid rgb(126, 124, 124); */
+    box-shadow: 0 0 10px 5px #558557;
     width: 104%;
+    padding: 15px 0 15px 0;
 }
 
 form {
@@ -133,17 +135,25 @@ button {
     padding:15px 25px 15px 25px;
     font: 1.5em 'norsebold', sans-serif;
     border-radius: 5px;
+    background-color: #596D48;
+}
+
+button:hover {
+    background-color: green;
 }
 
 footer > p {
     font-style: sans-serif ;
 }
 
-input:focus,
 input:hover {
-    border-color: #3636d7;
+    box-shadow: 0 0 5px 1px #3636d7;
 }
 
 input:invalid {
     border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid #558557;
 }
