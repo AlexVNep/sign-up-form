@@ -1,6 +1,8 @@
 const  pwd = document.querySelector('#pwd');
 const conpwd =document.querySelector('#conpwd');
 const p = document.querySelector('.p');
+const btn = document.querySelector('button');
+const inputs = document.querySelectorAll('input');
 
 pwd.addEventListener('blur', passwordCheck);
 conpwd.addEventListener('blur', confirmPasswordCheck);
@@ -47,3 +49,10 @@ function confirmPasswordCheck () {
         return false;
     }
 }
+
+inputs.forEach((input) => {
+    function clearInputs() {
+        input.value = ' ';
+    }
+    btn.addEventListener('click', clearInputs);
+})
